@@ -1,11 +1,10 @@
-<div class="like-widget-container" (click)="like()">
+<div class="like-widget-container" (appAction)="like()">
   <fa-icon
     role="button"
     tabindex="0"
     [attr.aria-describedby]="id"
     size="1x"
     [icon]="fonts.faThumbsUp"
-    (keyup.enter)="like()"
   ></fa-icon>
   <span
     [attr.id]="id"
